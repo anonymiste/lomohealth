@@ -11,13 +11,18 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('children', function (Blueprint $table) {
+       Schema::create('children', function (Blueprint $table) {
             $table->id();
             $table->string('qr_code')->unique();
             $table->string('name');
             $table->date('birth_date');
+            $table->enum('gender', ['M', 'F']);
+            $table->string('mother_name');
             $table->string('mother_phone');
-            $table->string('language');
+            $table->string('region');
+            $table->string('health_center');
+            $table->enum('language', ['fr', 'ewe', 'kabiye']);
+            $table->string('photo')->nullable();
             $table->timestamps();
         });
     }
