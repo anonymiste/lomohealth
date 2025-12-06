@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:lomohealth_mobile/screens/child_details_screen.dart';
+import 'package:mobile_scanner/mobile_scanner.dart';
 
 class ScannerScreen extends StatelessWidget {
   const ScannerScreen({super.key});

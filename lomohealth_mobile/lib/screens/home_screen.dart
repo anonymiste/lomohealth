@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lomohealth_mobile/screens/register_child_screen.dart';
+import 'package:lomohealth_mobile/screens/scanner_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
